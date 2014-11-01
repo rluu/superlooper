@@ -1,0 +1,32 @@
+##############################################################################
+
+Software name: SuperLooper
+
+Author: Ryan Luu
+Email:  ryanluu@gmail.com
+Software completion date: 2006.
+License: GNU General Public License version 2.
+
+Description: 
+
+SuperLooper is an application that loops playback of an audio or video file.  The playback of the audio or video file can be customized to play at different playback speeds, frame lengths, and starting points.  These features allow users to utilize this application as a tool when transcribing music in the form of audio and video files to sheet music manuscript.
+
+This software runs on the Linux platform.
+
+##############################################################################
+
+Dependencies:
+
+Qt 4.3  
+mplayer - to open the file.
+ffmpeg  - to determine how long the file is (for looping params).
+
+##############################################################################
+
+How to build and run:
+
+qmake
+make
+./SuperLooper
+
+##############################################################################
