@@ -1,11 +1,14 @@
 ##############################################################################
 
 Software name: SuperLooper
+Version: 1.0.0
+License: GNU General Public License version 2.
 
 Author: Ryan Luu
 Email:  ryanluu@gmail.com
 Software completion date: 2006.
-License: GNU General Public License version 2.
+
+##############################################################################
 
 Description: 
 
@@ -27,6 +30,6 @@ How to build and run:
 
 qmake
 make
-./SuperLooper
+./superlooper
 
 ##############################################################################
