@@ -1,0 +1,76 @@
+This file contains some features that I intend to incorporate into this looper.
+
+Support for:
+ - Video looping.
+	(What formats?)
+ - Audio looping.
+	(What formats?)
+
+Features:
+ - Slow-mo and Fast-mo.
+ - Reverse direction?
+ - Idle time between loops.
+ - Specify frame length.
+ - Buttons for frame shift length and direction.  Like the following:
+     <<<<   <<<   <<  <   >  >>   >>>   >>>>
+
+ - Play, Pause, and Stop.  Scroll-bar type of thing to go to a certain point.
+ - Display currently playing time.
+ - Save looping frame.
+ - Save audio/video from looping frame.
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+Ideas, thoughts, planning:
+
+
+
+lineedit - file            load button filedialog browse
+(or from cmdline)
+
+lineedit - mplayer loc.    button filedialog browse
+lineedit - extra flags
+
+-framedrop ?
+-frames <number>  play only the first x frames, then quit
+
+(AVI, with mp3 too?)
+-idx / -forceidx  Rebuilds index of files if no index was found, al- lowing seeking. 
+-saveidx
+-loadix <index file>
+
+-speed <0.01-100>
+-sb <byte position>
+-ss <time>  seek to a given time position.
+
+
+linedit - cmd-to-execute<read-only>
+
+
+up/down increase/decrease speed    qslider  <RESET to 100% BUTTON>
+(speed)
+lineedit value
+
+
+shift- left/right - shift playback frame  qslider <RESET to start BUTTON>
+(start time).
+lineedit value
+
+
+left-right for increase/decrease frame size qslider  ( start-time stays stationary )
+(# seconds)
+lineedit value  <RESET to 5 seconds> <Disable Looping>
+
+
+
+
+<START>        <STOP>             <APPLY/SAVE>   <ABOUT>    <EXIT> 
+
+exit should ask if changes should be saved.
+
+
+Doing the following:
+ffmpeg -i avi/mpeg/mp3
+will cause the "Duration" to be printed out to stderr.
