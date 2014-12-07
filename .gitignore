@@ -1,0 +1,9 @@
+# Ignore all build artifacts.
+*.o
+moc_*.cpp
+
+# Ignore the final built binary.
+superlooper
+
+# Don't ignore this file.
+!.gitignore
